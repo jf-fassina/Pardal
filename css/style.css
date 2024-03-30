@@ -1,0 +1,43 @@
+/*
+1. Fonts and Body
+2. Welcome
+
+
+
+*/
+
+/* 1. FONTS AND BODY -------------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: Lexend;
+  src: url(../assets/font/Lexend-Regular.ttf);
+}
+@font-face {
+  font-family: Lexend-Thin;
+  src: url(../assets/font/Lexend-Thin.ttf);
+}
+
+body {
+  font-family: Lexend-Thin !important;
+  color: aliceblue;
+  background-color: #303030;
+}
+
+/* 2. WELCOME --------------------------------------------------------------------------------------- */
+
+.welcome {
+  margin: 100px 100px 100px 40%;
+}
+.welcome > h1 {
+  font-size: 70px;
+  font-family: Lexend;
+}
+.welcome > div.sobre {
+  font-family: Lexend-Thin;
+  font-size: 22px;
+}
+.welcome > div.sobre > p > a {
+  text-decoration:solid;
+  color: aliceblue;
+}
+
