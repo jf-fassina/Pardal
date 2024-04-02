@@ -27,18 +27,42 @@ body {
 .navbar {
   background: #303030;
   font-family: Lexend;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  position: sticky;
 }
-.navbar > ul{
+.navbar > ul {
   list-style-type: none;
   display: inline;
+  padding-left: 10px;
 }
-.navbar > ul > li{
+.navbar > ul > li {
   font-size: 25px;
-  padding-left: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: inline;
+  cursor: pointer;
+  margin-right: 340px;
+  text-align: center;
+  transition: ease-in-out 250ms;
+}
+.navbar > ul > li:hover{
+  text-shadow: 1px 1px 7px aliceblue;
+  transition: ease-in-out 250ms;
+  font-size: 30px;
+}
 
+.logo {
+  margin-left: 0;
+}
+.navbar > ul > li > a {
+  color: aliceblue;
+  text-shadow: 1px 1px 2px aliceblue;
+  transition: ease-in-out 200ms;
+  text-decoration: none;
+}
+.navbar > ul > li > a:hover {
+  text-decoration: underline;
+  color: aliceblue;
+  text-shadow: 1px 1px 7px aliceblue;
 }
 /* 3. WELCOME --------------------------------------------------------------------------------------- */
 .inicio {
@@ -46,19 +70,22 @@ body {
   padding-bottom: 25%;
   background: #303030 url("../assets/images/dwarf-star.jpg") no-repeat top fixed;
   background-size: cover;
+  cursor: default;
 }
 
 .welcome {
   margin-left: 40%;
   background-color: #202020c1;
   border-radius: 25px;
-  padding: 1px 10px 10px 10px;
+  padding: 2px 12px 10px 15px;
   transition: ease-in-out 150ms;
 }
 
 .welcome:hover {
   transition: ease-in-out 150ms;
   transform: scale(1.015);
+  margin-left: 35%;
+  padding-right: 20px;
   background-color: #252525d7;
   box-shadow: 0 0 10px 5px #303030;
   text-shadow: 1px 1px 7px aliceblue;
