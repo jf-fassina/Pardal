@@ -1,8 +1,8 @@
 /*
 1. Fonts and Body
-2. Welcome
-
-
+2. Navbar
+3. Welcome
+4. Divisor
 
 */
 
@@ -21,12 +21,74 @@ body {
   font-family: Lexend-Thin !important;
   color: aliceblue;
   background-color: #303030;
+  margin: 0;
+}
+/* 2. NAVBAR --------------------------------------------------------------------------------------- */
+.navbar {
+  background: #303030;
+  font-family: Lexend;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  position: sticky;
+}
+.navbar > ul {
+  list-style-type: none;
+  display: inline;
+  padding-left: 10px;
+}
+.navbar > ul > li {
+  font-size: 25px;
+  display: inline;
+  cursor: pointer;
+  margin-right: 340px;
+  text-align: center;
+  transition: ease-in-out 250ms;
+}
+.navbar > ul > li:hover{
+  text-shadow: 1px 1px 7px aliceblue;
+  transition: ease-in-out 250ms;
+  font-size: 30px;
 }
 
-/* 2. WELCOME --------------------------------------------------------------------------------------- */
+.logo {
+  margin-left: 0;
+}
+.navbar > ul > li > a {
+  color: aliceblue;
+  text-shadow: 1px 1px 2px aliceblue;
+  transition: ease-in-out 200ms;
+  text-decoration: none;
+}
+.navbar > ul > li > a:hover {
+  text-decoration: underline;
+  color: aliceblue;
+  text-shadow: 1px 1px 7px aliceblue;
+}
+/* 3. WELCOME --------------------------------------------------------------------------------------- */
+.inicio {
+  padding-top: 15%;
+  padding-bottom: 25%;
+  background: #303030 url("../assets/images/dwarf-star.jpg") no-repeat top fixed;
+  background-size: cover;
+  cursor: default;
+}
 
 .welcome {
-  margin: 100px 100px 100px 40%;
+  margin-left: 40%;
+  background-color: #202020c1;
+  border-radius: 25px;
+  padding: 2px 12px 10px 15px;
+  transition: ease-in-out 150ms;
+}
+
+.welcome:hover {
+  transition: ease-in-out 150ms;
+  transform: scale(1.015);
+  margin-left: 35%;
+  padding-right: 20px;
+  background-color: #252525d7;
+  box-shadow: 0 0 10px 5px #303030;
+  text-shadow: 1px 1px 7px aliceblue;
 }
 .welcome > h1 {
   font-size: 70px;
@@ -37,7 +99,11 @@ body {
   font-size: 22px;
 }
 .welcome > div.sobre > p > a {
-  text-decoration:solid;
+  text-decoration: solid;
   color: aliceblue;
 }
-
+/* 4. DIVISOR ------------------------------------------------------------------------------------- */
+.divisor {
+  background-color: #c2c2c2;
+  box-shadow: 0 0 38px 49px #c2c2c2;
+}
